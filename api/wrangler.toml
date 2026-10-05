@@ -1,0 +1,12 @@
+name = "soundbay-api"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+
+# Sites allowed to talk to this API (comma separated, no trailing slash).
+[vars]
+ALLOWED_ORIGINS = "https://soundbay.danielbovolon.com,https://YOUR-GITHUB-USERNAME.github.io"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "soundbay"
+database_id = "PASTE-THE-ID-FROM-wrangler-d1-create"
